@@ -1,0 +1,9 @@
+{
+  "name": "AIA LogiTrack - Agro Industrielle Al Atlas",
+  "description": "Application PWA officielle Agro Industrielle Al Atlas (AIA) : gestion des commandes d'aliments de bétail et volaille, transporteurs, tournées chauffeurs et preuves de livraison certifiées.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

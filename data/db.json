@@ -1,0 +1,561 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Paul Bernard (Admin AIA)",
+      "email": "admin@logitrack.internal",
+      "role": "ADMIN",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr_logistics",
+      "name": "Sophie Lambert (Logistique)",
+      "email": "logistique@logitrack.internal",
+      "role": "LOGISTICS",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr_carr_dupont",
+      "name": "Transports Dupont (Gérant)",
+      "email": "dupont@transports-dupont.fr",
+      "role": "CARRIER",
+      "carrierId": "carr_dupont",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr_carr_sud",
+      "name": "Sud Logistique (Gérant)",
+      "email": "contact@sud-logistique.fr",
+      "role": "CARRIER",
+      "carrierId": "carr_sud",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr_drv_marc",
+      "name": "Marc Leclerc (Chauffeur)",
+      "email": "marc.leclerc@transports-dupont.fr",
+      "role": "DRIVER",
+      "carrierId": "carr_dupont",
+      "driverId": "drv_marc",
+      "active": true,
+      "createdAt": "2026-09-02T09:00:00.000Z"
+    },
+    {
+      "id": "usr_drv_antoine",
+      "name": "Antoine Vidal (Chauffeur)",
+      "email": "antoine.vidal@transports-dupont.fr",
+      "role": "DRIVER",
+      "carrierId": "carr_dupont",
+      "driverId": "drv_antoine",
+      "active": true,
+      "createdAt": "2026-09-02T09:00:00.000Z"
+    },
+    {
+      "id": "usr_drv_pierre",
+      "name": "Pierre Moreau (Chauffeur Sud)",
+      "email": "pierre.moreau@sud-logistique.fr",
+      "role": "DRIVER",
+      "carrierId": "carr_sud",
+      "driverId": "drv_pierre",
+      "active": true,
+      "createdAt": "2026-09-02T09:00:00.000Z"
+    }
+  ],
+  "carriers": [
+    {
+      "id": "carr_dupont",
+      "code": "DUPONT-01",
+      "name": "Transports Dupont Express",
+      "contactEmail": "contact@transports-dupont.fr",
+      "contactPhone": "+33 3 20 44 55 66",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "carr_sud",
+      "code": "SUDLOG-02",
+      "name": "Sud Fret & Logistique",
+      "contactEmail": "contact@sud-logistique.fr",
+      "contactPhone": "+33 4 91 22 33 44",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "drv_marc",
+      "carrierId": "carr_dupont",
+      "firstName": "Marc",
+      "lastName": "Leclerc",
+      "phone": "+33 6 12 34 56 78",
+      "licenseNumber": "PERM-FR-849301",
+      "vehiclePlate": "EX-921-TK",
+      "active": true,
+      "createdAt": "2026-09-02T09:00:00.000Z"
+    },
+    {
+      "id": "drv_antoine",
+      "carrierId": "carr_dupont",
+      "firstName": "Antoine",
+      "lastName": "Vidal",
+      "phone": "+33 6 98 76 54 32",
+      "licenseNumber": "PERM-FR-774019",
+      "vehiclePlate": "GH-441-ZZ",
+      "active": true,
+      "createdAt": "2026-09-02T09:00:00.000Z"
+    },
+    {
+      "id": "drv_pierre",
+      "carrierId": "carr_sud",
+      "firstName": "Pierre",
+      "lastName": "Moreau",
+      "phone": "+33 6 45 88 12 00",
+      "licenseNumber": "PERM-FR-391044",
+      "vehiclePlate": "AB-123-CD",
+      "active": true,
+      "createdAt": "2026-09-02T09:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "orderNumber": "CMD-10259",
+      "bcNumber": "BC-10259",
+      "dtNumber": "DT-10259",
+      "blFcNumber": "BLFC-8817",
+      "clientName": "Laboratoires Cosmé-Bio",
+      "deliveryAddress": "5 Rue des Lilas",
+      "destinationCity": "Arras",
+      "postalCode": "62000",
+      "destinationContact": "Mme Sandrine Roux",
+      "destinationPhone": "+33 3 21 88 99 00",
+      "cargoDescription": "1 Palette flaconnage verre",
+      "packagesCount": 1,
+      "weightKg": 190,
+      "billingStatus": "FACTUREE",
+      "operationalStatus": "AFFECTE",
+      "adminStatus": "CREEE",
+      "carrierId": null,
+      "driverId": null,
+      "id": "ord_1790692620599_802",
+      "createdAt": "2026-09-29T14:37:00.599Z",
+      "updatedAt": "2026-09-29T14:37:00.599Z"
+    },
+    {
+      "orderNumber": "CMD-10258",
+      "bcNumber": "BC-10258",
+      "dtNumber": "DT-10258",
+      "blFcNumber": "BLFC-8816",
+      "clientName": "Consortium BTP Régional",
+      "deliveryAddress": "32 Route Industrielle, Zone Sud",
+      "destinationCity": "Valenciennes",
+      "postalCode": "59300",
+      "destinationContact": "M. Thomas Leroux",
+      "destinationPhone": "+33 3 27 12 34 56",
+      "cargoDescription": "4 Palettes d’agrégats et outillage",
+      "packagesCount": 4,
+      "weightKg": 850,
+      "billingStatus": "NON_FACTUREE",
+      "operationalStatus": "AFFECTE",
+      "adminStatus": "CREEE",
+      "carrierId": null,
+      "driverId": null,
+      "id": "ord_1790692620598_968",
+      "createdAt": "2026-09-29T14:37:00.598Z",
+      "updatedAt": "2026-09-29T14:37:00.598Z"
+    },
+    {
+      "id": "ord_10254",
+      "orderNumber": "CMD-10254",
+      "bcNumber": "BC-10254",
+      "dtNumber": "DT-10254",
+      "blFcNumber": "BLFC-8812",
+      "clientName": "Industries Métallurgiques du Nord",
+      "deliveryAddress": "14 Rue de la Fonderie, ZI Les Graviers",
+      "destinationCity": "Lille",
+      "postalCode": "59000",
+      "destinationContact": "M. Gérard Fontaine",
+      "destinationPhone": "+33 3 20 11 22 33",
+      "cargoDescription": "2 Palettes Pièces usinées de précision",
+      "packagesCount": 2,
+      "weightKg": 480,
+      "billingStatus": "NON_FACTUREE",
+      "operationalStatus": "AFFECTE",
+      "adminStatus": "AFFECTEE_CHAUFFEUR",
+      "carrierId": "carr_dupont",
+      "driverId": "drv_marc",
+      "createdAt": "2026-09-28T07:30:00.000Z",
+      "updatedAt": "2026-09-28T09:15:00.000Z"
+    },
+    {
+      "id": "ord_10255",
+      "orderNumber": "CMD-10255",
+      "bcNumber": "BC-10255",
+      "dtNumber": "DT-10255",
+      "blFcNumber": "BLFC-8813",
+      "clientName": "Ateliers Électroniques de France",
+      "deliveryAddress": "8 Allée des Frênes",
+      "destinationCity": "Roubaix",
+      "postalCode": "59100",
+      "destinationContact": "Mme Clara Dubois",
+      "destinationPhone": "+33 3 20 77 88 99",
+      "cargoDescription": "5 Cartons composants électroniques",
+      "packagesCount": 5,
+      "weightKg": 65,
+      "billingStatus": "NON_FACTUREE",
+      "operationalStatus": "AFFECTE",
+      "adminStatus": "AFFECTEE_TRANSPORTEUR",
+      "carrierId": "carr_dupont",
+      "driverId": null,
+      "createdAt": "2026-09-28T08:00:00.000Z",
+      "updatedAt": "2026-09-28T08:30:00.000Z"
+    },
+    {
+      "id": "ord_10256",
+      "orderNumber": "CMD-10256",
+      "bcNumber": "BC-10256",
+      "dtNumber": "DT-10256",
+      "blFcNumber": "BLFC-8814",
+      "clientName": "Chantiers Navals Méditerranée",
+      "deliveryAddress": "Quai des Armateurs, Hangar 4",
+      "destinationCity": "Marseille",
+      "postalCode": "13002",
+      "destinationContact": "M. Jean-Luc Bastia",
+      "destinationPhone": "+33 4 91 55 66 77",
+      "cargoDescription": "1 Palette outillage lourd",
+      "packagesCount": 1,
+      "weightKg": 320,
+      "billingStatus": "NON_FACTUREE",
+      "operationalStatus": "AFFECTE",
+      "adminStatus": "AFFECTEE_CHAUFFEUR",
+      "carrierId": "carr_sud",
+      "driverId": "drv_pierre",
+      "createdAt": "2026-09-28T08:30:00.000Z",
+      "updatedAt": "2026-09-28T09:45:00.000Z"
+    },
+    {
+      "id": "ord_10257",
+      "orderNumber": "CMD-10257",
+      "bcNumber": "BC-10257",
+      "dtNumber": "DT-10257",
+      "blFcNumber": "BLFC-8815",
+      "clientName": "Pharmacie Centrale Régionale",
+      "deliveryAddress": "25 Boulevard de la Santé",
+      "destinationCity": "Douai",
+      "postalCode": "59500",
+      "destinationContact": "Dr. Vincent Martin",
+      "destinationPhone": "+33 3 27 90 10 20",
+      "cargoDescription": "10 Caisses Isothermes Médicaments",
+      "packagesCount": 10,
+      "weightKg": 140,
+      "billingStatus": "NON_FACTUREE",
+      "operationalStatus": "LIVRE",
+      "adminStatus": "LIVRE",
+      "carrierId": "carr_dupont",
+      "driverId": "drv_marc",
+      "createdAt": "2026-09-29T06:00:00.000Z",
+      "updatedAt": "2026-09-29T14:37:00.597Z"
+    }
+  ],
+  "proofs": [
+    {
+      "orderId": "ord_10257",
+      "driverId": "drv_marc",
+      "fileName": "proof_ord_10257_1790692620597_783b2c9d.jpg",
+      "fileSizeBytes": 4096,
+      "mimeType": "image/jpeg",
+      "sha256Hash": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+      "gpsLatitude": 50.3708,
+      "gpsLongitude": 3.0768,
+      "gpsAccuracy": 12,
+      "capturedAt": "2026-09-29T14:37:00.596Z",
+      "deviceInfo": "Chrome Mobile / Android PWA",
+      "watermarkText": "CMD:CMD-10257 | DT:DT-10257 | DRV:Marc Leclerc (Chauffeur) | 2026-09-29T14:37:00.597Z",
+      "storedPath": "/app/applet/data/proofs/proof_ord_10257_1790692620597_783b2c9d.jpg",
+      "id": "prf_1790692620597_994f7841",
+      "serverReceivedAt": "2026-09-29T14:37:00.597Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "orderId": null,
+      "eventType": "ERP_SYNCED",
+      "previousStatus": null,
+      "newStatus": null,
+      "actorId": "usr_admin",
+      "actorName": "Paul Bernard (Admin AIA)",
+      "actorRole": "ADMIN",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "action": "EXPORT_DELIVERIES_TO_ERP",
+        "exportedCount": 1
+      },
+      "id": "aud_1790692620600_f92d3cd7",
+      "timestamp": "2026-09-29T14:37:00.600Z"
+    },
+    {
+      "orderId": "ord_1790692620599_802",
+      "eventType": "ERP_SYNCED",
+      "previousStatus": null,
+      "newStatus": "CREEE",
+      "actorId": "usr_admin",
+      "actorName": "Paul Bernard (Admin AIA)",
+      "actorRole": "ADMIN",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "source": "ERP_CONNECTOR",
+        "orderNumber": "CMD-10259",
+        "client": "Laboratoires Cosmé-Bio"
+      },
+      "id": "aud_1790692620599_22009436",
+      "timestamp": "2026-09-29T14:37:00.600Z"
+    },
+    {
+      "orderId": "ord_1790692620598_968",
+      "eventType": "ERP_SYNCED",
+      "previousStatus": null,
+      "newStatus": "CREEE",
+      "actorId": "usr_admin",
+      "actorName": "Paul Bernard (Admin AIA)",
+      "actorRole": "ADMIN",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "source": "ERP_CONNECTOR",
+        "orderNumber": "CMD-10258",
+        "client": "Consortium BTP Régional"
+      },
+      "id": "aud_1790692620599_fad79e44",
+      "timestamp": "2026-09-29T14:37:00.599Z"
+    },
+    {
+      "orderId": "ord_10257",
+      "eventType": "DELIVERY_CONFIRMED",
+      "previousStatus": "CHARGE",
+      "newStatus": "LIVRE",
+      "actorId": "usr_drv_marc",
+      "actorName": "Marc Leclerc (Chauffeur)",
+      "actorRole": "DRIVER",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "proofId": "prf_1790692620597_994f7841",
+        "sha256Hash": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6",
+        "fileSizeBytes": 4096,
+        "gps": {
+          "lat": 50.3708,
+          "lng": 3.0768
+        }
+      },
+      "id": "aud_1790692620597_54f6d02a",
+      "timestamp": "2026-09-29T14:37:00.598Z"
+    },
+    {
+      "orderId": "ord_10257",
+      "eventType": "DT_SCANNED",
+      "previousStatus": "SUR_SITE",
+      "newStatus": "CHARGE",
+      "actorId": "usr_drv_marc",
+      "actorName": "Marc Leclerc (Chauffeur)",
+      "actorRole": "DRIVER",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "inputScanned": "DT-10257",
+        "matchedDT": "DT-10257"
+      },
+      "id": "aud_1790692620596_4bfdd92c",
+      "timestamp": "2026-09-29T14:37:00.596Z"
+    },
+    {
+      "orderId": "ord_10257",
+      "eventType": "BC_SCANNED",
+      "previousStatus": "AFFECTE",
+      "newStatus": "SUR_SITE",
+      "actorId": "usr_drv_marc",
+      "actorName": "Marc Leclerc (Chauffeur)",
+      "actorRole": "DRIVER",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "inputScanned": "BC-10257",
+        "matchedBC": "BC-10257",
+        "matchedOrder": "CMD-10257",
+        "isManual": false
+      },
+      "id": "aud_1790692620595_836a7cff",
+      "timestamp": "2026-09-29T14:37:00.595Z"
+    },
+    {
+      "orderId": "ord_10257",
+      "eventType": "DRIVER_ASSIGNED",
+      "previousStatus": "AFFECTEE_TRANSPORTEUR",
+      "newStatus": "AFFECTEE_CHAUFFEUR",
+      "actorId": "usr_carr_dupont",
+      "actorName": "Transports Dupont (Gérant)",
+      "actorRole": "CARRIER",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "driverId": "drv_marc",
+        "driverName": "Marc Leclerc",
+        "vehiclePlate": "EX-921-TK"
+      },
+      "id": "aud_1790692620594_f60ce4dd",
+      "timestamp": "2026-09-29T14:37:00.594Z"
+    },
+    {
+      "orderId": "ord_10257",
+      "eventType": "CARRIER_ASSIGNED",
+      "previousStatus": "CREEE",
+      "newStatus": "AFFECTEE_TRANSPORTEUR",
+      "actorId": "usr_logistics",
+      "actorName": "Sophie Lambert (Logistique)",
+      "actorRole": "LOGISTICS",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "carrierId": "carr_dupont",
+        "carrierName": "Transports Dupont Express",
+        "carrierCode": "DUPONT-01"
+      },
+      "id": "aud_1790692620594_35a38a56",
+      "timestamp": "2026-09-29T14:37:00.594Z"
+    },
+    {
+      "orderId": "ord_10256",
+      "eventType": "SECURITY_VIOLATION_ATTEMPT",
+      "previousStatus": "AFFECTE",
+      "newStatus": null,
+      "actorId": "usr_drv_marc",
+      "actorName": "Marc Leclerc (Chauffeur)",
+      "actorRole": "DRIVER",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "attempt": "UNASSIGNED_DRIVER_ACCESS",
+        "targetOrderId": "ord_10256"
+      },
+      "id": "aud_1790692620592_0cb0987c",
+      "timestamp": "2026-09-29T14:37:00.592Z"
+    },
+    {
+      "orderId": "ord_10256",
+      "eventType": "SECURITY_VIOLATION_ATTEMPT",
+      "previousStatus": "AFFECTE",
+      "newStatus": null,
+      "actorId": "usr_carr_dupont",
+      "actorName": "Transports Dupont (Gérant)",
+      "actorRole": "CARRIER",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "AutomatedTestSuite/1.0",
+      "details": {
+        "attempt": "CROSS_TENANT_ASSIGNMENT",
+        "targetOrderId": "ord_10256"
+      },
+      "id": "aud_1790692620591_3667d9ac",
+      "timestamp": "2026-09-29T14:37:00.591Z"
+    },
+    {
+      "id": "aud_seed_1",
+      "orderId": "ord_10254",
+      "eventType": "ORDER_CREATED",
+      "previousStatus": null,
+      "newStatus": "CREEE",
+      "actorId": "usr_admin",
+      "actorName": "Paul Bernard (Admin AIA)",
+      "actorRole": "ADMIN",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "System/Seed",
+      "timestamp": "2026-09-28T07:30:00.000Z",
+      "details": {
+        "source": "ERP_IMPORT",
+        "orderNumber": "CMD-10254"
+      }
+    },
+    {
+      "id": "aud_seed_2",
+      "orderId": "ord_10254",
+      "eventType": "CARRIER_ASSIGNED",
+      "previousStatus": "CREEE",
+      "newStatus": "AFFECTEE_TRANSPORTEUR",
+      "actorId": "usr_logistics",
+      "actorName": "Sophie Lambert (Logistique)",
+      "actorRole": "LOGISTICS",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "System/Seed",
+      "timestamp": "2026-09-28T08:00:00.000Z",
+      "details": {
+        "carrierId": "carr_dupont",
+        "carrierName": "Transports Dupont Express"
+      }
+    },
+    {
+      "id": "aud_seed_3",
+      "orderId": "ord_10254",
+      "eventType": "DRIVER_ASSIGNED",
+      "previousStatus": "AFFECTEE_TRANSPORTEUR",
+      "newStatus": "AFFECTEE_CHAUFFEUR",
+      "actorId": "usr_carr_dupont",
+      "actorName": "Transports Dupont (Gérant)",
+      "actorRole": "CARRIER",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "System/Seed",
+      "timestamp": "2026-09-28T09:15:00.000Z",
+      "details": {
+        "driverId": "drv_marc",
+        "driverName": "Marc Leclerc"
+      }
+    }
+  ],
+  "lastErpSync": "2026-09-29T14:37:00.600Z",
+  "sapConfig": {
+    "driver": "SAP_HANA",
+    "host": "sap-hana.aia.atlas.internal",
+    "port": 30015,
+    "databaseName": "HDB_AIA",
+    "schema": "SAPABAP1",
+    "username": "SAP_LOGITRACK_RO",
+    "password": "••••••••••••",
+    "ssl": true,
+    "poolSize": 10,
+    "timeoutSeconds": 15,
+    "autoSyncEnabled": true,
+    "autoSyncIntervalMinutes": 30,
+    "lastTestedAt": "2026-09-29T06:45:00.000Z",
+    "lastTestStatus": "SUCCESS",
+    "lastTestMessage": "Connexion établie avec succès (Instance HANA 2.0 SPS 07 Rev 73)",
+    "serverVersion": "SAP HANA Database 2.00.073.00.1695287654"
+  },
+  "sapQueries": [
+    {
+      "id": "qry_likp_lips",
+      "name": "Extraction Bons de Livraison & Transport (LIKP / LIPS)",
+      "category": "SAP S/4HANA & ECC",
+      "description": "Extrait les ordres d’expédition prêts pour transport avec adresses, tonnages et transporteurs désignés.",
+      "sql": "SELECT \n  LIKP.VBELN AS orderNumber,\n  LIKP.BSTNK AS bcNumber,\n  LIKP.BOLNR AS dtNumber,\n  LIKP.LFDAT AS deliveryDate,\n  KNA1.NAME1 AS clientName,\n  KNA1.STRAS AS deliveryAddress,\n  KNA1.ORT01 AS destinationCity,\n  KNA1.PSTLZ AS postalCode,\n  KNA1.TELF1 AS destinationPhone,\n  LIPS.ARKTX AS cargoDescription,\n  CAST(LIPS.LFIMG AS DECIMAL(10,2)) AS weightKg\nFROM SAPABAP1.LIKP AS LIKP\nINNER JOIN SAPABAP1.LIPS AS LIPS ON LIKP.VBELN = LIPS.VBELN\nINNER JOIN SAPABAP1.KNA1 AS KNA1 ON LIKP.KUNNR = KNA1.KUNNR\nWHERE LIKP.LFART IN ('LF', 'NL')\n  AND LIKP.WADAT >= CURRENT_DATE - 7\nORDER BY LIKP.ERDAT DESC;",
+      "updatedAt": "2026-09-29T06:00:00.000Z"
+    },
+    {
+      "id": "qry_odln_sbo",
+      "name": "SAP Business One - Livraisons Aliments Bétail (ODLN / DLN1)",
+      "category": "SAP Business One",
+      "description": "Extrait les documents de livraison (ODLN) et lignes d’articles (DLN1) pour les sacs et vracs AIA.",
+      "sql": "SELECT \n  T0.DocNum AS orderNumber,\n  T0.NumAtCard AS bcNumber,\n  T0.LicTradNum AS dtNumber,\n  T0.CardName AS clientName,\n  T0.Address AS deliveryAddress,\n  T0.City AS destinationCity,\n  T0.ZipCode AS postalCode,\n  T1.ItemCode AS itemCode,\n  T1.Dscription AS cargoDescription,\n  T1.Quantity AS packagesCount,\n  T1.Weight1 AS weightKg\nFROM ODLN T0\nINNER JOIN DLN1 T1 ON T0.DocEntry = T1.DocEntry\nWHERE T0.DocStatus = 'O'\n  AND T0.DocDate >= DATEADD(day, -5, GETDATE())\nORDER BY T0.DocDate DESC;",
+      "updatedAt": "2026-09-29T06:00:00.000Z"
+    },
+    {
+      "id": "qry_reconciliation",
+      "name": "Rapprochement des Preuves de Livraison & Facturation (VBRK)",
+      "category": "Facturation & Audit",
+      "description": "Vérifie les bons de livraison clôturés dans LogiTrack en attente de validation comptable dans SAP.",
+      "sql": "SELECT \n  LIKP.VBELN AS orderNumber,\n  VBRK.VBELN AS invoiceNumber,\n  VBRK.FKDAT AS billingDate,\n  VBRK.NETWR AS totalAmountEur,\n  VBRK.WAERK AS currency\nFROM SAPABAP1.LIKP AS LIKP\nLEFT JOIN SAPABAP1.VBRP AS VBRP ON LIKP.VBELN = VBRP.VGBEL\nLEFT JOIN SAPABAP1.VBRK AS VBRK ON VBRP.VBELN = VBRK.VBELN\nWHERE LIKP.WBSTK = 'C'\nORDER BY LIKP.WADAT DESC;",
+      "updatedAt": "2026-09-29T06:00:00.000Z"
+    }
+  ]
+}
